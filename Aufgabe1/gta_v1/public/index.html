@@ -26,8 +26,24 @@
 
             <!-- ############### VS1Lab 1a Form 1 Start -->
             <form id="tag-form" action="/tagging" method="post">
+                <fieldset>
+                    <legend>Add a new Geo Tag</legend>
 
-                <!-- ... your code here ... -->
+                    <label for="latitude1"> Latitude: </label>
+                    <input id="latitude1" value="49.01379" readonly> 
+                    
+                    <label for="longitude1"> Longitude: </label>
+                    <input id="longitude1" value="8.390071" readonly>
+
+                    <label for="name"> Name: </label>
+                    <input required type="text" id="name" maxlength="10" placeholder="e.g. Central Berlin">
+
+                    <label for="hashtag"> Hashtag: </label>
+                    <input id="hashtag" pattern="#[A-Za-z]{1,10}" placeholder="e.g. #ber">
+
+                    <button type="submit"> Add Tag </button>
+                </fieldset>
+                
 
             </form>
             <!-- ############### VS1Lab 1a Form 1 End -->
@@ -39,8 +55,20 @@
 
             <!-- ############### VS1Lab 1a Form 2 Start -->
             <form class="discovery__search" id="discoveryFilterForm" action="/discovery" method="post">
+                <fieldset>
+                    <legend> Search </legend>
 
-                <!-- ... your code here ... -->
+                    <label for="searchterm"> Search term or keywords: </label>
+                    <input id="searchterm" type="text" placeholder="e.g. Berlin">
+
+                    <label  hidden for="latitude2"> Latitude: </label>
+                    <input type="hidden" id="latitude2" value="49.01379">
+
+                    <label hidden for="longitude2" > Longitude: </label>
+                    <input type="hidden" id="longitude2" value="8.390071">
+
+                    <button type="submit"> Search </button>
+                </fieldset>
 
             </form>
             <!-- ############### VS1Lab 1a Form 2 End -->
