@@ -151,12 +151,51 @@ li {
 
 
 /* ### TODO ### Styles for Tagging component */
+.tagging {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.tagging h2 {
+  margin-bottom: 0.5rem;
+}
+
+.tagging input {
+  width: 100%;
+}
+
+.tagging button {
+  cursor: pointer;
+}
 /* ... your code here ... */
 
 
 /* ### TODO ### Styles for Discovery component */
+.discovery__search input[type="text"] {
+  width: 100%;
+  max-width: 25rem;
+}
 
+.discovery__wrapper > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.discovery__results li {
+  width: 100%;
+}
+
+.discovery__map img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.discovery__map span {
+  text-align: center;
+  margin-top: 0.5rem;
+}
 /* ... your code here ... */
 
 .main__tagging{
@@ -210,5 +249,39 @@ li {
 
 
 /* ### TODO ### Media Queries */
+@media screen and (max-width: 850px) {
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+
+  .discovery__wrapper {
+    flex-direction: column;
+  }
+
+  .discovery__map,
+  .discovery__taglist {
+    width: 100%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 /* ... your code here ... */
