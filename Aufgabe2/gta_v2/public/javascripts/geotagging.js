@@ -155,6 +155,10 @@ class MapManager {
             const mapManager = new MapManager();
             mapManager.initMap(lat,lon);
             mapManager.updateMarkers(lat,lon);
+
+             // Platzhalter-Bild und Beschreibung entfernen
+            document.querySelector("mapView").remove();
+            document.querySelector("#map span").remove();
         });
     }
 
